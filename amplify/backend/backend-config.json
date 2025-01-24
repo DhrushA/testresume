@@ -1,0 +1,117 @@
+{
+  "api": {
+    "generatepresignedurl": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "test"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "testing1811b18e": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "filechecker": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "test": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_filechecker_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "filechecker"
+        }
+      ]
+    },
+    "AMPLIFY_function_filechecker_openaiApiKey": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "filechecker"
+        }
+      ]
+    },
+    "AMPLIFY_function_filechecker_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "filechecker"
+        }
+      ]
+    },
+    "AMPLIFY_function_test_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test"
+        }
+      ]
+    },
+    "AMPLIFY_function_test_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "dresumetest": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ],
+          "category": "function",
+          "resourceName": "filechecker"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/generatepresignedurl": {
+      "name": "/generatepresignedurl",
+      "lambdaFunction": "test",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

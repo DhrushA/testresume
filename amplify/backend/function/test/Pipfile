@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+boto3="==1.26.90"
+src = {editable = true, path = "./src"}
+chalice="*"
+gql="*"
+requests_aws4auth="*"
+requests_toolbelt="*"
+python-dateutil="*"
+
+[requires]
+python_version = "3.13"

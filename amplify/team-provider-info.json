@@ -1,0 +1,37 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-testing-dev-387a9-authRole",
+      "UnauthRoleArn": "arn:aws:iam::796973512580:role/amplify-testing-dev-387a9-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::796973512580:role/amplify-testing-dev-387a9-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-testing-dev-387a9-deployment",
+      "UnauthRoleName": "amplify-testing-dev-387a9-unauthRole",
+      "StackName": "amplify-testing-dev-387a9",
+      "StackId": "arn:aws:cloudformation:us-east-2:796973512580:stack/amplify-testing-dev-387a9/c9ef6580-d9cc-11ef-ae7c-02e58909fe29",
+      "AmplifyAppId": "d117lpqidq7v40"
+    },
+    "categories": {
+      "auth": {
+        "testing1811b18e": {}
+      },
+      "function": {
+        "test": {
+          "deploymentBucketName": "amplify-testing-dev-387a9-deployment",
+          "s3Key": "amplify-builds/test-754c6b4b6e4b36425553-build.zip"
+        },
+        "filechecker": {
+          "deploymentBucketName": "amplify-testing-dev-387a9-deployment",
+          "s3Key": "amplify-builds/filechecker-506b67503355356a6f53-build.zip",
+          "openaiApiKey": "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"
+        }
+      },
+      "api": {
+        "generatepresignedurl": {}
+      },
+      "storage": {
+        "dresumetest": {}
+      }
+    }
+  }
+}
