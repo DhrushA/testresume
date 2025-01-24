@@ -22,8 +22,7 @@
         },
         "filechecker": {
           "deploymentBucketName": "amplify-testing-dev-387a9-deployment",
-          "s3Key": "amplify-builds/filechecker-506b67503355356a6f53-build.zip",
-          "openaiApiKey": "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"
+          "s3Key": "amplify-builds/filechecker-61526e394c57654e4933-build.zip"
         }
       },
       "api": {

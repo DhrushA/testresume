@@ -15,9 +15,6 @@
     },
     "s3Key": {
       "Type": "String"
-    },
-    "openaiApiKey": {
-      "Type": "String"
     }
   },
   "Conditions": {
@@ -72,9 +69,6 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            },
-            "OPENAI_API_KEY": {
-              "Ref": "openaiApiKey"
             }
           }
         },

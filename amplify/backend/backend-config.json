@@ -64,14 +64,6 @@
         }
       ]
     },
-    "AMPLIFY_function_filechecker_openaiApiKey": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "filechecker"
-        }
-      ]
-    },
     "AMPLIFY_function_filechecker_s3Key": {
       "usedBy": [
         {
